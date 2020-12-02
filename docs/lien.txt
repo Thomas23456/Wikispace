@@ -1,5 +1,9 @@
 https://blog.ippon.fr/2017/04/24/vue-js-2-0-petit-tutoriel-volume-1/
 
+npm install npm@latest -g
+
+npm install -g vue-cli
+
 npm init vite-app Wikispace
 
 cd Wikispace
