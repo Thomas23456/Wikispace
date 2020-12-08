@@ -1,8 +1,64 @@
+/* GENERAL */
+
+body{
+  background: black;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  border: solid 2px black;
+  padding: 0 10%;
+  margin: 0 0;
+}
+
+.no_selected{
+  display: none;
+}
+
+/* MENU */
+
+.liste_options{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  list-style: none;
+  background: grey;
+  margin: 0 0 7px 0;
+}
+
+.liste_options > a{
+  width: 150px;
+  padding: 10px 0;
+  text-decoration: none;
+  color: white;
+}
+
+.selected > li{
+  color: purple;
+  font-weight: bold;
+}
+
+/* PARTIE ASTRONAUTES */
+
+.container_astronaute{
+  background: grey;
+  width: 300px;
+  height: 100px;
+  margin: 2px;
+}
+
+.image_astronaute{
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%;
+}
+
+#astro{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }

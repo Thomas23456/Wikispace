@@ -1,8 +1,8 @@
 <template>
-  <div v-for="currency in info" :key="currency">
+  <div v-for="currency in info" :key="currency" class="container_astronaute">
     <span>
       {{ currency.name }}
-      <img style="width: 100px; height: 100px; border-radius: 50%;" :src="currency.profile_image" alt="Image astronaute"/>
+      <img class="image_astronaute" :src="currency.profile_image" alt="Image astronaute"/>
       <div id="agence"></div>
     </span>
   </div>
@@ -20,7 +20,7 @@ export default {
   },
   mounted () {
     axios
-      .get('https://spacelaunchnow.me/api/3.3.0/astronaut/?limit=30')
+      .get('https://spacelaunchnow.me/api/3.3.0/astronaut/?limit=28')
       .then(response => (this.info = response.data.results))
   }
 }
